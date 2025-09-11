@@ -72,7 +72,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Word member wordt nu wel meegelezen, de header alleen niet.
   - Bekijk alle 56 winkels vind ik een duidelijke link, je weet gelijk wat je krijgt als je op de link krijgt.
   - voor derest worden, op een paar na, alle links voorgelezen, dus dat is top!
-    
+
+Toegankelijkheid
+  contrast ratio = richtlijn hoe groot deze moet zijn: 
+  - Normale tekst: 4.5 : 1
+  - Headings: 3 : 1
+
+Ik heb ook gekeken of dille en kamille zich met de toegankelijkheid bezig houdt
+screenreaders dus wel, zoals eerder bekeken. 
+maaarrrr: 
+dark modus, increase contrast en reduce motion, werkte niet. Dus hier zou ik nog wel mee bezig kunnen gaan! 
 
 </details>
 

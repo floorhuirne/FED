@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw 
 
   #### Je focus:
-  responsive design
+  Responsive design
  
 </details>
 
@@ -57,6 +57,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  Headers: 
+  _ De meeste headers worden gelezen, dus dat is top!
+  - Structuur is wel logisch, het is me niet overal duidelijk wat ik er kan verwachten. Zo bij het stukje 'warm wonen' zou ik niet weten wat er mee bedoeld wordt. 
+  - bij Tips & Inspiratie leest hij de tekst uit en geeft hij de linkjes aan.
+  - Daarna vindt hij geen headers meer, terwijl er nog wel een section/ article staat met 'wordt member'
+  Links:
+  - Bijna alle links worden omschreven
+  - ook in de navigatie worden alle 'hoofd' links benoemd, maar ook gelijk alle die eronder vallen
+  - bij de section over de belangrijke waarschuwing, zou ik dat ook in de link neerzetten, zodat je weet dat je dan daar meer informatie over krijgt.
+  - bekijk meer wordt goed uitgesproken ook met "groter dan", wellicht zou je hier kunnen zetten wat je dan meer krijgt te zien
+  - In de section van Welkom bij Dille en kamille, staan links in de tekst verwerkt, niet alle links worden hier benoemd (tijdloze, natuurlijke & seizoenscollectie)
+  - Bij tips en inspiratie wordt alle tekst voor gelezen en is het ook een link. Ergens wel heel fijn, omdat je gelijk weet waar de link over gaat, alleen moet je wel veel luisteren
+  - Word member wordt nu wel meegelezen, de header alleen niet.
+  - Bekijk alle 56 winkels vind ik een duidelijke link, je weet gelijk wat je krijgt als je op de link krijgt.
+  - voor derest worden, op een paar na, alle links voorgelezen, dus dat is top!
+    
 
 </details>
 

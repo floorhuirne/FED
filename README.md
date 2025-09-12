@@ -1,4 +1,4 @@
-![breakdownHomePagina](https://github.com/user-attachments/assets/dee2253b-8ae2-4f37-8d5d-b34f9fb145d3)# Procesverslag
+# Procesverslag
 Markdown is een simpele manier om HTML te schrijven.  
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
@@ -113,6 +113,7 @@ dark modus, increase contrast en reduce motion, werkte niet. Dus hier zou ik nog
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
+  Ik liep iets achter, omdat ik in week 1/ begin deze week niet zoveel tijd had om er aan te zitten. In deze week heb ik dat proberen recht te trekken. Met het feedback moment had ik nog niet veel om te laten zien, maar ik ben sinds die les wel lekker bezig geweest! Zo heb ik geoefend met de grid garden. Ik ben daar tot niveau 24 gekomen, vanaf toen vond ik het te ingewikkeld. Ook heb ik de breakdown schets gemaakt en op basis daarvan begonnen aan mijn HTML. Ik hoop hier de volgende les feedback op te ontvangen. Van anderen heb ik wel veel geleerd ook! 
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
@@ -128,11 +129,11 @@ dark modus, increase contrast en reduce motion, werkte niet. Dus hier zou ik nog
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+- werk aan de winkel!
+- goed de breakdownschets maken, dit is fijn om te hebben voordat ik aan de HTML begin.
+- mocht de titel van je site geen H1 hebben, is het fijn om een visual hidden code toe te voegen, zodat je screenreader het wel kan voorlezen.
+- we hebben gekeken hoe je de <nav> balk het beste kan neerzetten in de HTML, zo is het bij mijn site zo dat ik een hamburger menu heb, profiel link, logo img & een winkelmand lijnk heb. Om de code dan zo netjes mogelijk te houden, is het handig om de 'belangrijkste' navigatie als lists onder elkaar te zetten, en de minder belangrijke (profiel/ winkelmandje) als <a href> te zetten.
+- Voor derest is het belangrijk dat ik bij de volgende voortgangsgesprek veel heb, zodat ik goed op schema blijf!
 
 </details>
 

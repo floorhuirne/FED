@@ -255,7 +255,7 @@ dark modus, increase contrast en reduce motion, werkte niet. Dus hier zou ik nog
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
+  1. https://www.w3schools.com/howto/howto_css_searchbar.asp
   2. bron 2
   3. ...
 

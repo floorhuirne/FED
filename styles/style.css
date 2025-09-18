@@ -1,8 +1,10 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
 
@@ -15,8 +17,8 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #111;
+	--color-background: #eee;
 }
 
 
@@ -27,5 +29,15 @@
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
+@font-face {
+	font-family: Typewriter Serial;
+	src: url(fonts/typewriter_serial-400-normal.woff2) format(woff2),
+	url(fonts/typewriter_serial-400-normal.woff) format(woff);
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1, h2, h3 {
+	font-family: Typewriter Serial;
+}
 

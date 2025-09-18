@@ -147,7 +147,8 @@ dark modus, increase contrast en reduce motion, werkte niet. Dus hier zou ik nog
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik begon met het html schrijven, tijdens het schrijven heb ik meerdere keren de code herschreven, zo had ik een veel sections in het begin, terwijl dit ook ul mocht zijn. Dit heb ik dus ook aangepast. Ook zijn veel van de cards volledige linkjes, deze heb ik er daardoor ook in gezet. Ook heb ik voor: /readme-images/veiligheidswaarschuwing.png. een hidden heading toegevoegd, zodat het voor de screen reader ook te lezen is. 
+ (neem ook screenshots op van delen van je website en code)
 
 
   ### Agenda voor meeting
@@ -163,10 +164,13 @@ dark modus, increase contrast en reduce motion, werkte niet. Dus hier zou ik nog
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - in het hamburger menu zit een ul met list items van de linkjes (nu heb ik alleen linkjes)
+  - deze linkjes mogen evt verwijzen naar de tweede pagina zodra ik klaar ben -> leuke toevoeging :)
+  - Voor de icoontjes in mijn hamburger menu/ searchbar is deze site handig: Icoontjes ->https://icones.js.org, je klikt op svg en zet de  code erin, je hoeft deze alleen te schalen.
+  - Logo in de header mag als linkje ipv een nav.
+  - Voor de cards, is semantisch correcter om eerst de header te zetten en daarna de img, ik heb nu eerst de img en dan de header.
+  - Voor de Tips en inspiratie stuk heb ik sections, dit mag een ul worden.
+  - Footer is alleen het witte gedeelte, de winkel locatie mag dus ook nog in de main.
 
 </details>
 

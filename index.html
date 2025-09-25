@@ -14,6 +14,11 @@
 
 <body>
 	<header>
+		<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+			viewBox="0 0 24 24"><!-- Icon from Meteor Icons by zkreations - https://github.com/zkreations/icons/blob/main/LICENSE -->
+			<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+				d="M3 6h18M3 12h18M3 18h18" />
+		</svg>
 		<!-- hamburger menu -->
 		<nav>
 			<img src="images/logo.svg" alt="logo Dille en Kamille">
@@ -34,57 +39,51 @@
 		</nav>
 		<!-- einde hamburger menu -->
 		<a href="#">Mijn account</a>
-		<nav> <a href="#"><img src="images/logo.svg" alt="Dille en Kamille logo"></a></nav>
+		<a href="#"><img src="images/logo.svg" alt="Dille en Kamille logo"></a>
 		<a href="#">Mijn winkelmand</a>
 		<input type="text" placeholder="Waar ben je naar op zoek?">
 		<!--// https://www.w3schools.com/howto/howto_css_searchbar.asp -->
 	</header>
 	<main>
 		<section>
-			<h1>Home pagina Dille & Kamille</h1> <!--dit moet hidden worden-->
 			<p>Smaken verschillen</p>
 			<h1>De koffie van Dille & Kamille</h1>
 			<a href="#">
 				<H2>Ontdek ons assortiment</H2>
 			</a>
 			<img src="images/koffieHomepage.jpg" alt="Afbeelding van aangeklede tafel met koffie">
-
-			<ul>
-				<li>
+ <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Card -->
+			<ul class="cards">
+				<li class="card">
 					<a href="#">
-						<img src="images/Herfst_bij_Dille.jpg" alt="Herfst bij Dille illustratie">
 						<h2>Herfst bij Dille</h2>
+						<img src="images/Herfst_bij_Dille.jpg" alt="Herfst bij Dille illustratie">
 					</a>
 					<a href="#">Bekijk hier</a>
 				</li>
 
-
-
-				<li>
+				<li class="card">
 					<a href="#">
-						<img src="images/Koffie.jpg" alt="Koffie illustratie">
 						<H2>Koffie</H2>
+						<img src="images/Koffie.jpg" alt="Koffie illustratie">
 					</a>
 					<a href="#">Bekijk hier</a>
 				</li>
 
-
-
-				<li>
+				<li class="card">
 					<a href="#">
-						<img src="images/Tinten_en_texturen.jpg" alt="Kaarsen illustratie">
 						<h2>Tinten en texturen</h2>
+						<img src="images/Tinten_en_texturen.jpg" alt="Kaarsen illustratie">
 					</a>
-					<a href="#">Bekjk hier</a>
+					<a href="#">Bekijk hier</a>
 				</li>
 
-
-				<li>
+				<li class="card">
 					<a href="#">
-						<img src="images/Goed_gevulde_hapjesplank.jpg" alt="Goed gevulde hapjesplank illustratie">
 						<h2>Goed gevulde hapjesplank</h2>
+						<img src="images/Goed_gevulde_hapjesplank.jpg" alt="Goed gevulde hapjesplank illustratie">
 					</a>
-					<a href="#">Mijn account</a>
+					<a href="#">Bekijk hier</a>
 				</li>
 			</ul>
 		</section>
@@ -102,70 +101,82 @@
 			<button>achteruit</button>
 			<button>voorruit</button>
 			<ul>
-				<li><img src="images/kandelaar.jpg" alt="kandelaar">
+				<li>
 					<h3>Kandelaar, mangohout, klein</h3>
 					<p>7,97</p>
+					<img src="images/kandelaar.jpg" alt="kandelaar">
 				</li>
 
-				<li><img src="images/kussen.jpg" alt="kussen">
+				<li>
 					<h3>Velours kussen, bio-katoen, takjes, off white, 30 x 50cm</h3>
 					<p>29,95</p>
+					<img src="images/kussen.jpg" alt="kussen">
 				</li>
 
-				<li><img src="images/slinger.jpg" alt="slinger">
+				<li>
 					<h3>Slinger, vilt, herfstblaadjes, ca. 150 cm</h3>
 					<p>19,95</p>
+					<img src="images/slinger.jpg" alt="slinger">
 				</li>
 
-				<li><img src="images/pompoen.jpg" alt="pompoen vilt">
+				<li>
 					<h3>Pompoen, vilt, oranje, ca 8cm</h3>
 					<p>5,95</p>
+					<img src="images/pompoen.jpg" alt="pompoen vilt">
 				</li>
 
-				<li><img src="images/onderzetter_wit.jpg" alt="onderzetter wit">
+				<li>
 					<h3>onderzetter, vilt, kiezel, omtrek 21 cm</h3>
 					<p>16,95</p>
+					<img src="images/onderzetter_wit.jpg" alt="onderzetter wit">
 				</li>
 
 				<li>
-					<img src="images/onderzetter_rood.jpg" alt="onderzetter rood">
 					<h3>Onderzetter rond, vilt, roze, omtrek 21 cm</h3>
 					<p>16,95</p>
-				</li>
-
-				<li><img src="images/bloem_wit.jpg" alt="bloem wit">
-					<h3>Bloem, vilt, wit, ca. 26cm</h3>
-					<p>6,96</p>
+					<img src="images/onderzetter_rood.jpg" alt="onderzetter rood">
 				</li>
 
 				<li>
-					<img src="images/bloem_geel.jpg" alt="bloem geel">
+					<h3>Bloem, vilt, wit, ca. 26cm</h3>
+					<p>6,96</p>
+					<img src="images/bloem_wit.jpg" alt="bloem wit">
+				</li>
+
+				<li>
 					<h3>Bloem, vilt, geel, ca. 26cm</h3>
 					<p>6,96</p>
+					<img src="images/bloem_geel.jpg" alt="bloem geel">
 				</li>
 
-				<li><img src="images/bloem_roze.jpg" alt="bloem roze">
+				<li>
 					<h3>Bloem, vilt, roze, ca. 26cm</h3>
 					<p>6,96</p>
+					<img src="images/bloem_roze.jpg" alt="bloem roze">
 				</li>
 
-				<li><img src="images/bloem_rood.jpg" alt="bloem rood">
+				<li>
 					<h3>Tak met besjes, vilt, rood, ca. 40cm</h3>
 					<p>6,96</p>
+					<img src="images/bloem_rood.jpg" alt="bloem rood">
 				</li>
-				<li><img src="images/bloem_blauw.jpg" alt="bloem blauw">
+
+				<li>
 					<h3>Tak met besjes, vilt, blauw, ca. 40cm</h3>
 					<p>6,96</p>
+					<img src="images/bloem_blauw.jpg" alt="bloem blauw">
 				</li>
 
-				<li><img src="images/bloem_oranje.jpg" alt="bloem oranje">
+				<li>
 					<h3>Tak kangoeroepootje, vilt, oranje, ca. 37cm</h3>
 					<p>6,96</p>
+					<img src="images/bloem_oranje.jpg" alt="bloem oranje">
 				</li>
 
-				<li><img src="images/paddestoel_geel.jpg" alt="paddestoel geel">
+				<li>
 					<h3>Paddenstoel, staand, vilt, geel, ca. 12cm</h3>
 					<p>6,95</p>
+					<img src="images/paddestoel_geel.jpg" alt="paddestoel geel">
 				</li>
 			</ul>
 			<img src="images/Herfst_bij_Dille_slider.jpg" alt="afbeelding van een herfsthoekje">
@@ -208,8 +219,8 @@
 		</section>
 
 		<article>
-			<img src="images/Winter_bij_Dille_Kamille_3.jpg" alt="Winter bij Dille en Kamille">
 			<h2>Word member van Dille & Kamille</h2>
+			<img src="images/Winter_bij_Dille_Kamille_3.jpg" alt="Winter bij Dille en Kamille">
 			<ul>
 				<li>Als eerste een kijkje in onze seizoenscollectie</li>
 				<li>Uitnodiging voor onze exclusieve memberavond</li>
@@ -217,7 +228,7 @@
 			</ul>
 			<a href="#">Word member!</a>
 		</article>
-		<section>
+		<section class="wordMember">
 			<img src="images/dille-kamille-stores.jpg" alt="winkel van dille en kamille">
 			<div>
 				<h2>Altijd in de buurt</h2>
@@ -242,8 +253,6 @@
 				<p>Alle genoemde prijzen zijn consumentenprijzen en inclusief BTW.</p>
 			</div>
 
-
-
 			<details>
 				<summary>Service</summary>
 				<ul>
@@ -256,8 +265,6 @@
 					<li><a href="#">Klantenservice</a></li>
 				</ul>
 			</details>
-
-
 
 			<details>
 				<summary>Over ons</summary>

@@ -5,11 +5,9 @@
 *::after,
 *::before {
 	box-sizing: border-box;
+	margin: none;
+	padding: none;
 }
-
-
-
-
 
 
 /*********************/
@@ -18,26 +16,97 @@
 :root {
 	/* startje */
 	--color-text: #111;
-	--color-background: #eee;
+	--color-background: #FAF8ED;
 }
-
-
-
 
 
 /****************/
 /* JOUW STYLING */
 /****************/
 
+
+
 @font-face {
-	font-family: Typewriter Serial;
-	src: url(fonts/typewriter_serial-400-normal.woff2) format(woff2),
-	url(fonts/typewriter_serial-400-normal.woff) format(woff);
+	font-family: "Typewriter Serial";
+	src: url(../fonts/typewriter_serial-400-normal.woff2) format(woff2),
+	url(../fonts/typewriter_serial-400-normal.woff) format(woff);
 	font-weight: normal;
 	font-style: normal;
 }
 
+body {
+	background-color: var(--color-background);
+}
+
+img {
+	width: 75vw;
+}
+
+a {
+	text-decoration: none;
+}
+
 h1, h2, h3 {
-	font-family: Typewriter Serial;
+	font-family: "Typewriter Serial";
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 1em; 
+}
+
+header a img {
+	width: 25%;
+}
+
+header nav img {
+	width: 25%;
+}
+
+main section img{
+	width: 90%;
+	align-items: center;
+}
+
+/* main section ul {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+} */
+
+main section ul li{
+	background-color: white;
+	padding: 1rem;
+	margin: 0.5rem;
+	text-align: center;
+	list-style-type: none;
+	flex-basis: 1em;
+}
+
+main section ul li img {
+	width: 100%;
+}
+
+a {
+	display: flex;
+	flex-direction: column;
+	color: #111;
+}
+
+a h2 {
+	order: 1
+}
+
+.cards {
+	display: flex;
+}
+.card {
+	width: ;
+}
+.card img {
+	width: 100%;
 }
 

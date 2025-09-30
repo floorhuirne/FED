@@ -12,51 +12,61 @@
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
-<body>
+<body class="Hoofdpagina">
 	<header>
-		<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-			viewBox="0 0 24 24"><!-- Icon from Meteor Icons by zkreations - https://github.com/zkreations/icons/blob/main/LICENSE -->
-			<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-				d="M3 6h18M3 12h18M3 18h18" />
-		</svg>
+		<button class="openMenu">☰</button>
 		<!-- hamburger menu -->
-		<nav>
-			<img src="images/logo.svg" alt="logo Dille en Kamille">
-			<a href="#">Keuken</a>
-			<a href="#">Huis</a>
-			<a href="#">Tuin</a>
-			<a href="#">Bad & Douche</a>
-			<a href="#">Eten & Drinken</a>
-			<a href="#">Cadeau</a>
-			<a href="#">Herfst</a>
-			<!-- ^ Hieronder vallen ook nog andere categorieën, moeten die ook in de html? -->
-			<a href="#">Nieuw</a>
-			<a href="#">Inspiratie </a>
-			<a href="#">Recepten</a>
+		<nav class="menu" hidden> <!-- zorgt ervoor dat het menu verstopt is tot dat je er op klikt-->
+			<button class="closeMenu">✖</button>
+			<a class="active"><img src="images/logo.svg" alt="logo Dille en Kamille"></a>
+			<ul>
+				<li><a href="#">Keuken</a></li>
+				<li><a href="#">Huis</a></li>
+				<li><a href="#">Tuin</a></li>
+				<li><a href="#">Bad & Douche</a></li>
+				<li><a href="#">Eten & Drinken</a></li>
+				<li><a href="#">Cadeau</a></li>
+				<li><a href="#">Herfst</a></li>
+				<li><a href="#">Nieuw</a></li>
+				<li><a href="#">Inspiratie </a></li>
+				<li><a href="#">Recepten</a></li>
+			</ul>
 			<a href="#">Winkels</a>
 			<a href="#">Klantenservice</a>
 			<a href="#">NL</a>
 		</nav>
 		<!-- einde hamburger menu -->
-		<a href="#">Mijn account</a>
-		<a href="#"><img src="images/logo.svg" alt="Dille en Kamille logo"></a>
-		<a href="#">Mijn winkelmand</a>
-		<input type="text" placeholder="Waar ben je naar op zoek?">
+
+		<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+				viewBox="0 0 24 24"><!-- Icon from Material Design Light by Pictogrammers - https://github.com/Templarian/MaterialDesignLight/blob/master/LICENSE.md -->
+				<path fill="currentColor"
+					d="M11.5 14c4.14 0 7.5 1.57 7.5 3.5V20H4v-2.5c0-1.93 3.36-3.5 7.5-3.5m6.5 3.5c0-1.38-2.91-2.5-6.5-2.5S5 16.12 5 17.5V19h13zM11.5 5A3.5 3.5 0 0 1 15 8.5a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8 8.5A3.5 3.5 0 0 1 11.5 5m0 1A2.5 2.5 0 0 0 9 8.5a2.5 2.5 0 0 0 2.5 2.5A2.5 2.5 0 0 0 14 8.5A2.5 2.5 0 0 0 11.5 6" />
+			</svg></a>
+		<a href="#"><img class="logo" src="images/logo.svg" alt="Dille en Kamille logo"></a>
+		<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+				viewBox="0 0 24 24"><!-- Icon from WeUI Icon by WeUI - undefined -->
+				<path fill="currentColor" fill-rule="evenodd"
+					d="M8 7V6a4 4 0 1 1 8 0v1h3c.552 0 1 .449 1 1.007v12.001c0 1.1-.895 1.992-1.994 1.992H5.994A1.994 1.994 0 0 1 4 20.008v-12C4 7.45 4.445 7 5 7zm1.2 0h5.6V6a2.8 2.8 0 0 0-5.6 0zM8 8.2H5.2v11.808c0 .436.356.792.794.792h12.012a.794.794 0 0 0 .794-.792V8.2H16V11h-1.2V8.2H9.2V11H8z" />
+			</svg></a>
+		<input type="search" placeholder="Waar ben je naar op zoek?">
 		<!--// https://www.w3schools.com/howto/howto_css_searchbar.asp -->
+
 	</header>
 	<main>
-		<section>
+		<section class="assortiment">
+			<h1 class="visually-hidden"> Welkom bij Dille en Kamille</h1>
 			<p>Smaken verschillen</p>
-			<h1>De koffie van Dille & Kamille</h1>
-			<a href="#">
-				<H2>Ontdek ons assortiment</H2>
-			</a>
+			<h2>Herfst bij Dille & Kamille</h2>
+			<a class="button" href="#"> Ontdek ons assortiment</a>
 			<img src="images/koffieHomepage.jpg" alt="Afbeelding van aangeklede tafel met koffie">
- <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Card -->
+
+
+
+			<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Card -->
 			<ul class="cards">
 				<li class="card">
 					<a href="#">
-						<h2>Herfst bij Dille</h2>
+						<h3>Warm wonen</h3>
 						<img src="images/Herfst_bij_Dille.jpg" alt="Herfst bij Dille illustratie">
 					</a>
 					<a href="#">Bekijk hier</a>
@@ -64,7 +74,7 @@
 
 				<li class="card">
 					<a href="#">
-						<H2>Koffie</H2>
+						<h3>Koffie</h3>
 						<img src="images/Koffie.jpg" alt="Koffie illustratie">
 					</a>
 					<a href="#">Bekijk hier</a>
@@ -72,7 +82,7 @@
 
 				<li class="card">
 					<a href="#">
-						<h2>Tinten en texturen</h2>
+						<h3>Tinten en texturen</h3>
 						<img src="images/Tinten_en_texturen.jpg" alt="Kaarsen illustratie">
 					</a>
 					<a href="#">Bekijk hier</a>
@@ -80,7 +90,7 @@
 
 				<li class="card">
 					<a href="#">
-						<h2>Goed gevulde hapjesplank</h2>
+						<h3>Goed gevulde hapjesplank</h3>
 						<img src="images/Goed_gevulde_hapjesplank.jpg" alt="Goed gevulde hapjesplank illustratie">
 					</a>
 					<a href="#">Bekijk hier</a>
@@ -88,10 +98,9 @@
 			</ul>
 		</section>
 
-		<section>
-			<h2>Belangrijke veiligheidswaarschuwing</h2> <!--Visual hidden-->
-			<p>veiligheidwaarschuwing over onze Plantenirrigator Vogel (00041764)! </p>
-			<a href="#">Meer informatie ></a>
+		<section class="melding">
+			<h2 class="visually-hidden">  Belangrijke veiligheidswaarschuwing</h2> <!--Visual hidden-->
+			<p>Belangrijke veiligheidwaarschuwing over onze Plantenirrigator Vogel (00041764). <a href="#">Meer informatie ></a></p>
 		</section>
 
 		<section>

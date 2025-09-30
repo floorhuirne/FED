@@ -227,19 +227,30 @@ dark modus, increase contrast en reduce motion, werkte niet. Dus hier zou ik nog
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/WK5.1" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/WK5.2" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/WK5.3" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  * Het maken van de header
+  * Het maken van semantische HTML
+  * Een background toevoegen
+  * Grid gebruiken
+  * Cards maken
+  * Hoe ik met semantische HTML de order kan aanpassen met CSS
+  * Hamburger menu
+  * Caroussel maken
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Ik heb nog niet alles af kunnen maken, zoals de footer en pagina 2. 
+  Ook nog niet het hamburger menu vorm kunnen geven
+  Responsive is ook nog niet gelukt
+  Caroussel werkt, maar is qua vormgeving nog niet 1 op 1
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
 
@@ -256,7 +267,11 @@ dark modus, increase contrast en reduce motion, werkte niet. Dus hier zou ik nog
   Nb. Vermeld de bronnen ook in je code.
 
   1. https://www.w3schools.com/howto/howto_css_searchbar.asp
-  2. bron 2
-  3. ...
+  2. Icon from Material Design Light by Pictogrammers - https://github.com/Templarian/MaterialDesignLight/blob/master/LICENSE.md 
+  3. [...](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Card )
+  4. https://www.youtube.com/watch?v=dIUOWdwwZBw
+  5. https://codepen.io/shooft/pen/QwjQGZe
+  6. https://www.a11yproject.com/posts/how-to-hide-content/
+  7. opdrachten van school
 
 </details>

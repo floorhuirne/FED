@@ -210,7 +210,7 @@ dark modus, increase contrast en reduce motion, werkte niet. Dus hier zou ik nog
   * Cards li. Cards > a is alleen die linkjes oproepen in de css ipv main section li bijvoorbeeld kun je de class oproepen en met > a alle a's oproepen die in die class staan. 
   * H3 voor koffie etc omdat dit niet het 'belangrijkste' is van de pagina. 
   * Hamburger menu mag een nav met een list maken 
-  * Img een linkje maken <img src="readme-images/Proces3.1 alt="foto van code">
+  * Img een linkje maken <img src="readme-images/Proces3.1" alt="foto van code">
   * Grids gebruiken voor het assortiment, deze in de mediaquery aanpassen naar 4 bij een groter scherm. 
   * Mediaquery om het responsive te maken
   * @media onderin je css bestand zodat de webpagina eerst de gehele pagina laadt, en dan de pagina aanpast aan het formaat scherm dat de gebruiker gebruikt. 

@@ -197,27 +197,23 @@ dark modus, increase contrast en reduce motion, werkte niet. Dus hier zou ik nog
 <details>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
+
+
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  De HTML van mijn eerste pagina ziet er goed uit, en zou graag hier feedback op willen. Ik heb ook een stukje 
+  hier dit ging goed & dit was lastig. ook heb ik wat vragen over de responsive maken en het grid hoe ik dat kan gebruiken
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  * Cards li. Cards > a is alleen die linkjes oproepen in de css ipv main section li bijvoorbeeld kun je de class oproepen en met > a alle a's oproepen die in die class staan. 
+  * H3 voor koffie etc omdat dit niet het 'belangrijkste' is van de pagina. 
+  * Hamburger menu mag een nav met een list maken 
+  * Img een linkje maken <img src="readme-images/Proces3.1 alt="foto van code">
+  * Grids gebruiken voor het assortiment, deze in de mediaquery aanpassen naar 4 bij een groter scherm. 
+  * Mediaquery om het responsive te maken
+  * @media onderin je css bestand zodat de webpagina eerst de gehele pagina laadt, en dan de pagina aanpast aan het formaat scherm dat de gebruiker gebruikt. 
 
 </details>
 

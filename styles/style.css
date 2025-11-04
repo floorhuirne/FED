@@ -16,6 +16,9 @@
 :root {
 	/* startje */
 	--color-text: #111;
+	--color-textFooter: #97ba7e;
+	--color-textlicht: white;
+	--color-textGrijs: lightgrey;
 	--color-textButton: white;
 	--color-background: #FAF8ED;
 	--color-button: #111;
@@ -23,7 +26,11 @@
 	--color-backgroundMelding: #9EB3C4;
 	--color-backgroundBanner: #E0CC83;
 	--color-backgroundCard: white;
-	--color-backgroundMember: #DFE5D6; 
+	--color-backgroundMember: #DFE5D6;
+	--color-backgroundTips: #F7F5DC;
+	--color-backgroundKlantenservice: #5F6E5A;
+	--color-backgroundFooter: white;
+	 
 }
 
 /****************/
@@ -44,6 +51,7 @@
 /* HEADER */
 /****************/
 header {
+	z-index: 100;
 	position: fixed;
 	top: 0;
 	background-color: #ffffff;
@@ -195,7 +203,6 @@ h1 {
 }
 
 
-
 h3 {
 	font-size: 1rem;
 }
@@ -255,12 +262,12 @@ input {
 	MELDING
 *************************/
 
-.melding {
+/* .melding {
 	padding-top: 3rem;
 	padding-bottom: 4rem;
 	margin-top: 2.5em;
 
-}
+} */
 
 .melding p {
 	font-weight: 600;
@@ -273,33 +280,30 @@ input {
 	font-weight: 600;
 }
 
-
-.melding::before {
-	content: "";
+.melding {
 	background: var(--color-backgroundMelding);
-	height: 15vh;
-	width: 100%;
-	left: 0;
-	position: absolute;
-	z-index: -1;
+	padding: 1.5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: -1.5em;
+	margin-right: -1.5em;
 }
 
 /************************
 	CARROUSSEL
 *************************/
 
-/********************/
 /* https://codepen.io/shooft/pen/QwjQGZe */
 .items ul::scroll-button(right) {
-  /* eerst wat je ziet / dan wat je hoort */
-  content: '→' / 'Next';
-  /* ruimte van de rechterkant */
-  right:clamp(1.5rem, 5vw, 2rem);
+	/* eerst wat je ziet / dan wat je hoort */
+	content: '→' / 'Next';
+	/* ruimte van de rechterkant */
+	right: clamp(1.5rem, 5vw, 2rem);
 }
 
 .items ul::scroll-button(left) {
-  content: '←' / 'Previous';
-  left:clamp(1.5rem, 5vw, 2rem);
+	content: '←' / 'Previous';
+	left: clamp(1.5rem, 5vw, 2rem);
 }
 
 
@@ -311,24 +315,27 @@ input {
 	scroll-behavior: smooth;
 	/* zodat je niet per ongeluk 'back' scrollt */
 	overscroll-behavior-x: contain;
-
-
 }
 
+
+
+
 .card2 {
-  flex: 0 0 50%; /* neemt 70% van de breedte van de carrousel */
-  margin: 0.5em;
-  background-color: var(--color-backgroundCard);
-  padding: 0.5em;
-  list-style: none;
-  justify-content: space-between;
-  align-items: stretch;
+	flex: 0 0 50%;
+	/* neemt 70% van de breedte van de carrousel */
+	margin: 0.5em;
+	background-color: var(--color-backgroundCard);
+	padding: 0.5em;
+	list-style: none;
+	justify-content: space-between;
+	align-items: stretch;
 }
 
 .card2 a {
 	display: flex;
 	flex-direction: column;
 }
+
 .card2 a img {
 	order: -1;
 	width: 100%;
@@ -348,21 +355,33 @@ input {
 }
 
 .items {
-  position: relative; 
-  margin-left: -1.5em;   /* marge van main compenseren */
-  margin-right: -1.5em;
-  padding-bottom: 17rem;
+	position: relative;
+	margin-left: -1.5em;
+	/* marge van main compenseren */
+	margin-right: -1.5em;
+	padding-bottom: 7rem;
+}
+
+.items>a {
+	display: block;
+	/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/display */
+	text-align: right;
+	margin-right: 1.5em;
+	font-weight: 600;
+	text-decoration: underline;
 }
 
 .items::before {
-  content: "";
-  position: absolute;
-  top: 10rem;        /* zodat hij deels achter de carrousel kruipt */
-  left: 0;
-  width: 100%;
-  height: 60vh;      /* speel met de hoogte */
-  background: url("../images/Herfst_bij_Dille_slider.jpg") no-repeat center/cover;
-  z-index: -1;
+	content: "";
+	position: absolute;
+	top: 10rem;
+	/* zodat hij deels achter de carrousel kruipt */
+	left: 0;
+	width: 100%;
+	height: 60vh;
+	/* speel met de hoogte */
+	background: url("../images/Herfst_bij_Dille_slider.jpg") no-repeat center/cover;
+	z-index: -1;
 }
 
 /************************
@@ -370,27 +389,17 @@ input {
 *************************/
 
 .banner {
-	padding-top: 3em;
-	padding-bottom: 4em;
-	margin-top: 2.5em;
-	position: relative;
-	
-}
-
-.banner::before {
-	inset: 0; /* alles boven onder */
+	padding-top: 2em;
+	padding-bottom: 2em;
+	margin-top: 10em;
+	background-color: var(--color-backgroundBanner);
 	margin-left: -1.5em;
 	margin-right: -1.5em;
-	content: "";
-	height: 40vh;
-	width: 100% + 3em; /* ik vroeg aan ai hoe ik de banner gelijk trek aan beide kanten */
-	position: absolute;
-	z-index: -1;
-	background-color: var(--color-backgroundBanner);
 }
 
+
 .banner h2 {
-	font-family:'Gill Sans', 'Gill Sans MT', sans-serif ;
+	font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
 	font-weight: lighter;
 	align-items: center;
 	justify-content: center;
@@ -406,22 +415,45 @@ input {
 /************************
 	TIPS & INSPIRATIE
 *************************/
+.Tips {
+	background-color: var(--color-backgroundTips);
+	margin-left: -1.5em;
+	margin-right: -1.5em;
+	margin-bottom: 3em;
+	padding-bottom: 5em;
+}
+
 .Tips h2 {
 	font-size: 2.5rem;
 	font-weight: lighter;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	margin-left: 1em;
 }
 
 .Tips h3 {
 	font-size: 1.5em;
 }
 
+.Tips>a {
+	display: block;
+	/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/display */
+	text-align: right;
+	margin-right: 1.5em;
+	margin-bottom: 2em;
+	font-weight: 600;
+	text-decoration: underline;
+}
+
 .Tips section {
 	background-color: var(--color-backgroundCard);
 	padding-bottom: 1.2em;
 	margin-bottom: 1em;
+	margin: 1.5em;
 }
 
-.Tips section h3, p {
+.Tips section h3,
+p {
 	font-weight: lighter;
 	padding-left: 0.75em;
 	padding-right: 0.75em;
@@ -442,19 +474,169 @@ input {
 	display: flex;
 	flex-direction: column;
 	background-color: var(--color-backgroundMember);
-	padding-bottom: 1.2em;
 	margin-bottom: 1em;
+	margin-top: 6em;
 }
 
+/* afbeelding vult het hele blok */
 .wordMember img {
 	order: -1;
 	width: 100%;
+	margin: 0;
 }
+
+/* tekstgedeelte krijgt padding */
+.wordMember h2,
+.wordMember ul,
+.wordMember .button {
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 1em;
+}
+
+.wordMember h2 {
+	padding-top: 1em;
+}
+
+.wordMember .button {
+	margin-left: 1.5em;
+	margin-right: 5em;
+	margin-bottom: 1.5em;
+}
+
+
 
 .wordMember ul {
-	font-family: 'Gill Sans', 'Gill Sans MT',  sans-serif;
+	font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+	line-height: 1.5em;
+	margin-left: 1.5em;
 }
 
+/****************
+ KLANTENSERVICE 
+ ****************/
+
+.Klantenservice {
+	background-color: var(--color-backgroundKlantenservice);
+	padding-bottom: 1.2em;
+	margin-bottom: 1em;
+	margin: 1.5em;
+	margin-top: 5em;
+	margin-right: -1.5em;
+	margin-left: -1.5em;
+}
+
+.Klantenservice,
+.Klantenservice h2,
+.Klantenservice a,
+.Klantenservice p {
+	color: var(--color-textlicht);
+}
+
+.Klantenservice h2,
+.Klantenservice a {
+	margin-left: 1em;
+}
+
+.Klantenservice div {
+	background-color: var(--color-button);
+	margin: 1em;
+	margin-right: 6em;
+	margin-top: -3em;
+	padding: 1em;
+	line-height: 2em;
+	position: relative;
+	z-index: 0;
+}
+
+.Klantenservice p {
+	padding-bottom: 1.5em;
+}
+
+.Klantenservice a {
+	text-decoration: underline;
+}
+
+/* ****************
+***** FOOTER ******
+******************* */
+
+footer {
+	background-color: var(--color-backgroundFooter);
+	margin-top: -1.5em;
+}
+
+footer strong {
+	color: var(--color-textFooter) ;
+	font-weight: 700;
+}
+
+footer p {
+	font-weight: 400;
+	font-size: smaller;
+	padding: 2em;
+}
+
+
+
+.BTW {
+	color: var(--color-textGrijs);
+	margin-bottom: 1.5em;
+}
+
+footer section div {
+	background-color: var(--color-backgroundFooter);
+	display: flex;
+	align-items: center;
+	margin-bottom: 1em;
+}
+
+footer section img {
+	width: 50%;
+	padding: 2em;
+}
+
+
+footer summary {
+  display: flex;
+  justify-content: space-between; /* titel links, icoon rechts */
+  align-items: center;            /* netjes op één lijn */
+  list-style: none;               /* driehoekje weg */
+  padding: 0.75em;          
+  font-family: "Typewriter Serial", sans-serif;
+  font-size: 1.2rem;
+  border-bottom: 1px solid rgb(247, 245, 245);
+  margin-left: 0.5em;
+  margin-right: 1em;
+}
+
+footer summary svg {
+  width: 1.25em;
+  height: 1.25em;
+}
+
+footer a {
+	margin: 1.5em;
+	line-height: 2em;
+	font-weight: 350;
+}
+
+footer a svg {
+  width: 1.25em;
+  height: 1.25em;
+  vertical-align: middle;
+  margin-left: 1em;
+  margin-bottom: 1.5em;
+}
+
+
+footer select {
+	width: 90%;
+	padding: 0.8em;
+	background-color: rgb(250, 249, 249);
+	border: none;
+	margin: 1.5em;
+}
 
 /************************
 	VISUAL HIDDEN CODE 

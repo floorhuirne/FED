@@ -30,7 +30,7 @@
 	--color-backgroundTips: #F7F5DC;
 	--color-backgroundKlantenservice: #5F6E5A;
 	--color-backgroundFooter: white;
-	 
+
 }
 
 /****************/
@@ -78,9 +78,19 @@ header input {
 	top: 0;
 	left: 0;
 	height: 100%;
-	padding: 1rem;
+	width: 70%;
+	padding: 2em;
 	background: #ffffff;
 	font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+}
+
+.menu a {
+	display: block;
+	padding: 0.5em;
+}
+
+.menu img {
+	width: 25%;
 }
 
 /* hulp van klasgenoot */
@@ -94,7 +104,11 @@ header input {
 	list-style-type: none;
 }
 
-/* BUTTONS NAVIGATIE */
+
+
+/*****************
+ BUTTONS NAVIGATIE 
+ ******************/
 .menu .closeMenu {
 	position: absolute;
 	top: 10px;
@@ -119,8 +133,6 @@ header input {
 	width: 25%;
 }
 
-/* -------------------------------------------
----------------------------------------------- */
 
 /****************/
 /* MAIN / BODY */
@@ -209,7 +221,6 @@ h3 {
 
 p,
 input {
-	margin: .25em;
 	font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
 	font-weight: lighter;
 	color: var(--color-text);
@@ -453,7 +464,7 @@ input {
 }
 
 .Tips section h3,
-p {
+.Tips section p {
 	font-weight: lighter;
 	padding-left: 0.75em;
 	padding-right: 0.75em;
@@ -534,7 +545,7 @@ p {
 }
 
 .Klantenservice h2,
-.Klantenservice a {
+.Klantenservice > a {
 	margin-left: 1em;
 }
 
@@ -549,12 +560,25 @@ p {
 	z-index: 0;
 }
 
+.Klantenservice div h2 {
+	margin-left: 0;
+}
+
 .Klantenservice p {
 	padding-bottom: 1.5em;
+	padding-left: 1.5em;
+	padding-right: 1em;
 }
 
 .Klantenservice a {
+	display: inline-block;
 	text-decoration: underline;
+}
+
+.Klantenservice .Mail {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
 }
 
 /* ****************
@@ -567,7 +591,7 @@ footer {
 }
 
 footer strong {
-	color: var(--color-textFooter) ;
+	color: var(--color-textFooter);
 	font-weight: 700;
 }
 
@@ -598,21 +622,24 @@ footer section img {
 
 
 footer summary {
-  display: flex;
-  justify-content: space-between; /* titel links, icoon rechts */
-  align-items: center;            /* netjes op één lijn */
-  list-style: none;               /* driehoekje weg */
-  padding: 0.75em;          
-  font-family: "Typewriter Serial", sans-serif;
-  font-size: 1.2rem;
-  border-bottom: 1px solid rgb(247, 245, 245);
-  margin-left: 0.5em;
-  margin-right: 1em;
+	display: flex;
+	justify-content: space-between;
+	/* titel links, icoon rechts */
+	align-items: center;
+	/* netjes op één lijn */
+	list-style: none;
+	/* driehoekje weg */
+	padding: 0.75em;
+	font-family: "Typewriter Serial", sans-serif;
+	font-size: 1.2rem;
+	border-bottom: 1px solid rgb(247, 245, 245);
+	margin-left: 0.5em;
+	margin-right: 1em;
 }
 
 footer summary svg {
-  width: 1.25em;
-  height: 1.25em;
+	width: 1.25em;
+	height: 1.25em;
 }
 
 footer a {
@@ -622,11 +649,11 @@ footer a {
 }
 
 footer a svg {
-  width: 1.25em;
-  height: 1.25em;
-  vertical-align: middle;
-  margin-left: 1em;
-  margin-bottom: 1.5em;
+	width: 1.25em;
+	height: 1.25em;
+	vertical-align: middle;
+	margin-left: 1em;
+	margin-bottom: 1.5em;
 }
 
 
@@ -637,6 +664,219 @@ footer select {
 	border: none;
 	margin: 1.5em;
 }
+
+
+
+
+/**************
+PAGINA 2
+**************/
+
+/* BREADCRUMBS */
+
+.breadcrumbs {
+	margin-bottom: 1.5em;
+	margin-top: -1em;
+	overflow: auto;
+	white-space: nowrap; 	/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/white-space */
+}
+
+.breadcrumbs ul {
+	display: inline-flex;
+	list-style: none;
+	gap: .5em;
+	font-size: 0.8em;
+}
+
+.breadcrumbs li {
+	display: flex;
+	/* tekst en pijltje blijven bij elkaar */
+	align-items: center;
+	gap: .25em;
+	margin-bottom: 0.5em;
+}
+
+.breadcrumbs a {
+	text-decoration: none;
+}
+
+.breadcrumbs svg {
+	width: .8em;
+	height: .8em;
+}
+
+
+
+.Pagina2 h1 {
+	font-size: 1.2em;
+	margin-bottom: 1.5em;
+}
+
+
+/****************
+   FOTOS KOFFIE
+*****************/
+.Products {
+	display: flex;
+	flex-direction: column;
+
+}
+
+/* 2 bronnen gebruikt: 
+https://codepen.io/shooft/pen/wBKyoWx 
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-snap-type */
+
+.Product {
+	display: flex;
+	/* li naast elkaar */
+	overflow: hidden;
+	/* de li's buiten beeld zijn niet zichtbaar */
+	scroll-snap-type: x mandatory;
+	/* horizontaal scrollen en 'snapt' elke foto */
+	scroll-behavior: smooth;
+	/* scrollen verloopt soepel */
+	list-style: none;
+	align-items: center;
+
+
+	background-color: white;
+	margin: -1.5em;
+	padding: 0em;
+}
+
+.Product li {
+	flex-basis: 100%;
+	flex-shrink: 0;
+	/* li zijn zo breed als de ul */
+	scroll-snap-align: center;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+}
+
+.Product li img {
+  width: 100%;
+  height: auto;
+  display: block;     /* haalt baseline-gap weg */
+  max-height: 40vh;   /* begrenst hoogte */
+  object-fit: contain; /* netjes binnen de slide */
+  background-color: white;
+  margin-bottom: 1.5em;
+}
+
+/* eind gebruik bronnen */
+
+.Product a svg {
+	margin: 1em;
+	color: lightgrey;
+	width: 0.5em;
+}
+
+
+/***************
+	PRIJS
+****************/
+
+.Prijs {
+	font-weight: 500;
+	font-size: 1.5em;
+	margin-top: 1.5em;
+	margin-bottom: 0.2em ;
+}
+
+.Prijs span {
+	color: lightgrey;
+	font-weight: lighter;
+	margin-left: .5em;
+	font-size: 0.75em;
+}
+
+
+/***************
+	VOORWAARDEN
+****************/
+
+.Voorwaarden {
+	margin-bottom: 1.5em;
+}
+
+.Voorwaarden li {
+	display: flex;
+	align-items: center;
+
+}
+.Voorwaarden svg {
+	width: 1.2em;
+	color: #97ba7e;
+}
+
+.Products > a {
+	text-decoration: underline;
+	margin-bottom: 1.5em;
+}
+
+summary {
+	display: flex;
+	justify-content: space-between;
+	/* titel links, icoon rechts */
+	align-items: center;
+	/* netjes op één lijn */
+	list-style: none;
+	/* driehoekje weg */
+	padding: 0.75em;
+	font-family: "Typewriter Serial", sans-serif;
+	font-size: 1.2rem;
+	border-bottom: 1px solid lightgrey;
+}
+
+summary svg {
+	width: 1.25em;
+	height: 1.25em;
+}
+
+.Products section {
+	margin-bottom: 1.5em;
+	border-top: 1px solid lightgrey;
+	margin-right: 1em;
+}
+
+/************************
+TOEVOEGEN WINKELMANDJE
+************************ */
+
+
+.Toevoegen {
+	position: fixed;
+	bottom: 0;
+	z-index: 100;
+	margin-left: -1.5em;
+	display: flex;
+	background-color: white;
+	padding: 0.75em;
+	width: 100%;
+	gap: 0.5em;
+}
+
+.Toevoegen select {
+	width: 20%;
+	border: 1px solid lightgrey;
+	font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+	font-size: 1.5em;
+	font-weight: lighter;
+}
+
+.Toevoegen button {
+	width: 80%;
+	background-color: var(--color-button);
+	color: var(--color-textButton);
+	font-family: "Typewriter Serial", "Sans serif";
+	font-size: 1em;
+	padding: 0.75em;
+	
+}
+
+
+
 
 /************************
 	VISUAL HIDDEN CODE 

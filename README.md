@@ -215,9 +215,9 @@ dark modus, increase contrast en reduce motion, werkte niet. Dus hier zou ik nog
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/Pagina1" width="375px" alt="uitomst opdracht 1">
-  <img src="readme-images/Pagina2_contrast" width="375px" alt="uitomst opdracht 1">
-  <img src="readme-images/Pagina3" width="375px" alt="uitomst opdracht 1">
+  <img src=".../Pagina1" width="375px" alt="Pagina 1">
+  <img src=".../Pagina2_contrast" width="375px" alt="Pagina 2">
+  <img src=".../Pagina3" width="375px" alt="Pagina 3">
 
 
   ### Dit ging goed/Heb ik geleerd: 

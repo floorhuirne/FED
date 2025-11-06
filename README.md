@@ -175,6 +175,13 @@ dark modus, increase contrast en reduce motion, werkte niet. Dus hier zou ik nog
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  1. dat ik nog een dark theme moet maken
+  2. de visual hidden headers goed zijn
+  3. alle labels voorzien mogen zijn van een toelichting
+  4. alles is goed te volgen
+  5. kleurencontrast is hoog
+  6. labels bij selectievakjes
+  7. de code had wat overzichtelijker gemogen
 
 </details>
 
@@ -237,7 +244,7 @@ dark modus, increase contrast en reduce motion, werkte niet. Dus hier zou ik nog
 
 
   ### Dit was lastig/Is niet gelukt:
-Wat ik lastig blijf vinden is het werken met grid, hier heb ik steeds wel mijn notities bij moeten houden. Ook vond ik soms lastig hoe de flexbox werkte. Ik merk ook dat ik steeds als ik weer begin met coderen er weer helemaal in moet komen, terwijl ik dan bijvoorbeeld de dag ervoor er helemaal in zat. Ik blijf het lastig vinden. Ook vond ik het responsive maken lastig. 
+Wat ik lastig blijf vinden is het werken met grid, hier heb ik steeds wel mijn notities bij moeten houden. Ook vond ik soms lastig hoe de flexbox werkte. Ik merk ook dat ik steeds als ik weer begin met coderen er weer helemaal in moet komen, terwijl ik dan bijvoorbeeld de dag ervoor er helemaal in zat. Ik blijf het lastig vinden. Ook vond ik het responsive maken lastig. Ook vond ik de tijd die je had voor de twee pagina's erg kort. 
 
 </details>
 

@@ -1,4 +1,4 @@
-<img width="375" height="670" alt="Pagina2_contrast" src="https://github.com/user-attachments/assets/045b9728-1670-4450-9c9f-e34e2073dff2" /># Procesverslag
+Procesverslag
 Markdown is een simpele manier om HTML te schrijven.  
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 

@@ -151,16 +151,6 @@ dark modus, increase contrast en reduce motion, werkte niet. Dus hier zou ik nog
  (neem ook screenshots op van delen van je website en code)
 
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
@@ -241,15 +231,13 @@ dark modus, increase contrast en reduce motion, werkte niet. Dus hier zou ik nog
   * Hoe ik met semantische HTML de order kan aanpassen met CSS
   * Hamburger menu
   * Caroussel maken
+  * de pagina's na coderen op mobiele versie
 
 
 
 
   ### Dit was lastig/Is niet gelukt:
-  Ik heb nog niet alles af kunnen maken, zoals de footer en pagina 2. 
-  Ook nog niet het hamburger menu vorm kunnen geven
-  Responsive is ook nog niet gelukt
-  Caroussel werkt, maar is qua vormgeving nog niet 1 op 1
+Wat ik lastig blijf vinden is het werken met grid, hier heb ik steeds wel mijn notities bij moeten houden. Ook vond ik soms lastig hoe de flexbox werkte. Ik merk ook dat ik steeds als ik weer begin met coderen er weer helemaal in moet komen, terwijl ik dan bijvoorbeeld de dag ervoor er helemaal in zat. Ik blijf het lastig vinden. Ook vond ik het responsive maken lastig. 
 
 </details>
 
@@ -273,5 +261,13 @@ dark modus, increase contrast en reduce motion, werkte niet. Dus hier zou ik nog
   5. https://codepen.io/shooft/pen/QwjQGZe
   6. https://www.a11yproject.com/posts/how-to-hide-content/
   7. opdrachten van school
+  8. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/display
+  9. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/white-space
+  10. https://codepen.io/shooft/pen/wBKyoWx
+  11. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-snap-type
+  12. http://www.w3.org/2000/svg
+  13. https://www.w3schools.com/tags/tag_select.asp
+  14. https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Card
+  15. https://www.w3schools.com/howto/howto_css_searchbar.asp
 
 </details>

@@ -173,6 +173,37 @@ dark modus, increase contrast en reduce motion, werkte niet. Dus hier zou ik nog
   5. kleurencontrast is hoog
   6. labels bij selectievakjes
   7. de code had wat overzichtelijker gemogen
+  8. 
+
+--------
+
+  1. De content is netjes en de buttons zijn gelabeld en omschreven
+  2. HTML code heb ik gevalideerd en klopt
+  3. Als lang heb ik NL, dus deze voldoet ook
+  4. Elke pagina heeft een unieke (dan al visual hidden) titel
+  5. Viewpoort zoom is niet disabled.
+  6. Je kunt doormiddel van tabs door de pagina's heen bewegen en dit wordt ook goed aangegeven.
+  7. De pagina's zijn ook gekanteld te bekijken.
+  8. Horizontaal scrollen is uitgeschakeld.
+  9. links en buttons zijn goed klikbaar
+  10. er is voldoende scrol ruimte in beide pagina's aanwezig
+  11. Content is geintroduceert met een passende heading
+  12. er is per pagina 1 H1 aanwezig
+  13. Heading elements zijn in een logische volgorde gebruikt
+  14. er zijn geen heading levels overgeslagen
+  15. voor list items gebruikt als het ging om lijsten.
+  16. alle img hebben een alt
+  17. decoratieve img hebben nu ook geen alt (hiervoor wel, heb het aangepast)
+  18. voor charts heb ik alt bij de img
+  19. voor links heb ik het a element gebruikt
+  20. links zijn of visueel of omschreven als links
+  21. button elementen zijn voor buttons gebruikt
+  22. Dark/light mode zijn supported
+  23. high contrast zou beter kunnen
+  24. voor de meeste tekst is het contrast groot genoeg
+
+Kortom, de pagina's voldoen goed aan de eisen van de WCAG checklijst. 
+
 
 </details>
 
@@ -215,12 +246,15 @@ dark modus, increase contrast en reduce motion, werkte niet. Dus hier zou ik nog
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src=".../Pagina1" width="375px" alt="Pagina 1">
-  <img src=".../Pagina2_contrast" width="375px" alt="Pagina 2">
-  <img src=".../Pagina3" width="375px" alt="Pagina 3">
+  <img src="readme-images/koffiebonen-productpagina.png" alt="Productpagina met een winkelmandje knop onderaan.">
+  <img src="readme-images/herfst-bij-dille-en-kamille.png" alt="Donkere thema met tekst ‘Herfst bij Dille & Kamille’ en een foto van mensen met koffie aan tafel.">
+  <img src="readme-images/klantenservice-dille-kamille.png" alt="Klantenservicepagina met een Dille & Kamille winkel en tekst ‘Altijd in de buurt’.">
 
 
   ### Dit ging goed/Heb ik geleerd: 
+
+In het begin vond ik het coderen erg lastig en was ik er niet zo goed in, naarmate ik de lessen volgde en oefende met de oefeningen, begon ik er iets een handigheid in te krijgen. Ik merk wel dat ik steeds weer moeite heb om er weer lekker in te komen. Ook heb ook geleerd dat coderen niet mijn sterkste kant is, hoewel ik het wel leuk vond! Wel heb ik een heleboel geleerd en kan ik door dit vak code sneller begrijpen. Zo denk ik zeker dat ik voldoende basis kennis heb om met anderen later naar code te kunnen kijken, deze te begrijpen en evt (met wat meer geduld) kan coderen. 
+  
   * Het maken van de header
   * Het maken van semantische HTML
   * Een background toevoegen
@@ -236,7 +270,7 @@ dark modus, increase contrast en reduce motion, werkte niet. Dus hier zou ik nog
 
 
   ### Dit was lastig/Is niet gelukt:
-Wat ik lastig blijf vinden is het werken met grid, hier heb ik steeds wel mijn notities bij moeten houden. Ook vond ik soms lastig hoe de flexbox werkte. Ik merk ook dat ik steeds als ik weer begin met coderen er weer helemaal in moet komen, terwijl ik dan bijvoorbeeld de dag ervoor er helemaal in zat. Ik blijf het lastig vinden. Ook vond ik het responsive maken lastig. Ook vond ik de tijd die je had voor de twee pagina's erg kort. 
+Wat ik lastig blijf vinden is het werken met grid, hier heb ik steeds wel mijn notities bij moeten houden. Ook vond ik soms lastig hoe de flexbox werkte. Ik merk ook dat ik steeds als ik weer begin met coderen er weer helemaal in moet komen, terwijl ik dan bijvoorbeeld de dag ervoor er helemaal in zat. Ook vond ik het responsive maken lastig. Ik ben geen snelle codeerder heb ik geleerd, dus voor mij was de tijd die er voor was iets te weinig. Ik merkte wel hoe vaker ik het deed hoe sneller ik er in begon te worden. Dus dat is fijn! Het 1 op 1 desktop maken is me niet helemaal gelukt, mocht ik hier meer tijd voor hebben was ik er zeker voor gegaan, maar ik denk dat ik in de buurt ben gekomen en de belangrijkste dingen responsive heb kunnen maken. 
 
 </details>
 

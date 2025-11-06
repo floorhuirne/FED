@@ -1,4 +1,4 @@
-# Procesverslag
+<img width="375" height="670" alt="Pagina2_contrast" src="https://github.com/user-attachments/assets/045b9728-1670-4450-9c9f-e34e2073dff2" /># Procesverslag
 Markdown is een simpele manier om HTML te schrijven.  
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
@@ -117,15 +117,6 @@ dark modus, increase contrast en reduce motion, werkte niet. Dus hier zou ik nog
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -224,9 +215,9 @@ dark modus, increase contrast en reduce motion, werkte niet. Dus hier zou ik nog
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/WK5.1" width="375px" alt="uitomst opdracht 1">
-  <img src="readme-images/WK5.2" width="375px" alt="uitomst opdracht 1">
-  <img src="readme-images/WK5.3" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/Pagina1" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/Pagina2_contrast" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/Pagina3" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -239,6 +230,7 @@ dark modus, increase contrast en reduce motion, werkte niet. Dus hier zou ik nog
   * Hamburger menu
   * Caroussel maken
   * de pagina's na coderen op mobiele versie
+  * darkmode maken
 
 
 

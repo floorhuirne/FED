@@ -272,6 +272,11 @@ In het begin vond ik het coderen erg lastig en was ik er niet zo goed in, naarma
   ### Dit was lastig/Is niet gelukt:
 Wat ik lastig blijf vinden is het werken met grid, hier heb ik steeds wel mijn notities bij moeten houden. Ook vond ik soms lastig hoe de flexbox werkte. Ik merk ook dat ik steeds als ik weer begin met coderen er weer helemaal in moet komen, terwijl ik dan bijvoorbeeld de dag ervoor er helemaal in zat. Ook vond ik het responsive maken lastig. Ik ben geen snelle codeerder heb ik geleerd, dus voor mij was de tijd die er voor was iets te weinig. Ik merkte wel hoe vaker ik het deed hoe sneller ik er in begon te worden. Dus dat is fijn! Het 1 op 1 desktop maken is me niet helemaal gelukt, mocht ik hier meer tijd voor hebben was ik er zeker voor gegaan, maar ik denk dat ik in de buurt ben gekomen en de belangrijkste dingen responsive heb kunnen maken. 
 
+
+Voor het responsive maken heb ik even snel (vooral voor mezelf duidelijk denk ik) een markdown schets gemaakt. 
+
+<img src="readme-images/markdownSchets.png" alt="Reponsive schets">
+
 </details>
 
 

@@ -1,0 +1,1067 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text: #111;
+	--color-textFooter: #97ba7e;
+	--color-textlicht: white;
+	--color-textGrijs: lightgrey;
+	--color-textButton: white;
+	--color-background: #FAF8ED;
+	--color-button: #111;
+	--color-backgroundHeader: white;
+	--color-backgroundHome: #BB8830;
+	--color-backgroundMelding: #9EB3C4;
+	--color-backgroundBanner: #E0CC83;
+	--color-backgroundCard: white;
+	--color-backgroundMember: #DFE5D6;
+	--color-backgroundTips: #F7F5DC;
+	--color-backgroundKlantenservice: #5F6E5A;
+	--color-backgroundFooter: white;
+
+}
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+@font-face {
+	font-family: "Typewriter Serial";
+	src: url(../fonts/typewriter_serial-400-normal.woff2) format(woff2),
+		url(../fonts/typewriter_serial-400-normal.woff) format(woff);
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+/****************/
+/* HEADER */
+/****************/
+header {
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	background-color: var(--color-backgroundHeader);
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 1.5em;
+	align-items: center;
+	justify-content: space-around;
+}
+
+header input {
+	width: 100%;
+	/* zodat hij onderaan komt in de header */
+	padding: 1em;
+	border: 1px solid #f5f5f5;
+}
+
+/****************/
+/* HAMBURGER MENU */
+/****************/
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 70%;
+	padding: 2em;
+	background: #ffffff;
+	font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+}
+
+.menu a {
+	display: block;
+	padding: 0.5em;
+}
+
+.menu img {
+	width: 25%;
+}
+
+/* hulp van klasgenoot */
+
+.menu[hidden] {
+	/* verberg als hidden aanwezig is */
+	display: none;
+}
+
+.menu li {
+	list-style-type: none;
+}
+
+
+
+/*****************
+ BUTTONS NAVIGATIE 
+ ******************/
+.menu .closeMenu {
+	position: absolute;
+	top: 10px;
+	/* afstand van boven */
+	right: 10px;
+	/* afstand van rechts */
+	background: none;
+	border: none;
+	font-size: 1.5rem;
+}
+
+.openMenu {
+	background: none;
+	border: none;
+	font-size: 1.5rem;
+}
+
+
+.logo {
+	min-width: 70px;
+	max-width: 100px;
+	width: 25%;
+}
+
+
+/****************/
+/* MAIN / BODY */
+/****************/
+
+main {
+	padding-top: 10em;
+	/* zodat de header niet overlapt */
+	margin: 1.5em;
+}
+
+body {
+	background-color: var(--color-background);
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-text);
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Typewriter Serial";
+	font-weight: lighter;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+.assortiment h2 {
+	line-height: 0.90em;
+	font-size: 2.5rem;
+	font-weight: lighter;
+	padding-top: 0.25em;
+	margin-right: 1.5em;
+	margin-bottom: 2rem;
+}
+
+.assortiment {
+	width: 100%;
+}
+
+/* https://www.youtube.com/watch?v=dIUOWdwwZBw */
+.assortiment::before {
+	content: "";
+	background: var(--color-backgroundHome);
+	height: 85%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+
+}
+
+/* ****** */
+
+.button {
+	font-family: "Typewriter Serial";
+	font-weight: lighter;
+	font-size: 1.2rem;
+	background-color: var(--color-button);
+	color: var(--color-textButton);
+	padding: 1em;
+}
+
+.assortiment img {
+	margin-top: 4rem;
+}
+
+.assortiment p {
+	font-weight: 400;
+}
+
+
+h3 {
+	font-size: 1eem;
+}
+
+p,
+input {
+	font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+	font-weight: lighter;
+	color: var(--color-text);
+}
+
+/****************/
+/* CARDS */
+/****************/
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: stretch;
+	/* zorgt ervoor dat alle items even hoog blijven*/
+}
+
+.card {
+	margin: 0.5em;
+	background-color: var(--color-backgroundCard);
+	padding: 1em;
+	text-align: center;
+	list-style: none;
+	justify-content: space-between;
+	/* margin weghalen */
+}
+
+.card a {
+	display: flex;
+	flex-direction: column;
+	/* tekst onder img */
+
+}
+
+.card a img {
+	order: -1;
+}
+
+.card a h3 {
+	font-weight: lighter;
+	order: 0;
+	margin-bottom: 0.5em;
+	/* beetje ruimte onder de tekst */
+	padding-bottom: 0.25em;
+	/* ruimte tussen tekst en lijn */
+	border-bottom: 0.5px solid #111;
+	/* horizontale lijn */
+}
+
+/************************
+	MELDING
+*************************/
+
+
+.melding p {
+	font-weight: 600;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.melding a {
+	text-decoration: underline;
+	font-weight: 600;
+}
+
+.melding {
+	background: var(--color-backgroundMelding);
+	padding: 1.5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: -1.5em;
+	margin-right: -1.5em;
+}
+
+/************************
+	CARROUSSEL
+*************************/
+
+/* https://codepen.io/shooft/pen/QwjQGZe */
+.items ul::scroll-button(right) {
+	/* eerst wat je ziet / dan wat je hoort */
+	content: '→' / 'Next';
+	/* ruimte van de rechterkant */
+	right: clamp(1.5rem, 5vw, 2rem);
+}
+
+.items ul::scroll-button(left) {
+	content: '←' / 'Previous';
+	left: clamp(1.5rem, 5vw, 2rem);
+}
+
+.items ul {
+	align-items: stretch;
+	display: flex;
+	overflow: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	/* zodat je niet per ongeluk 'back' scrollt */
+	overscroll-behavior-x: contain;
+}
+
+
+
+
+.card2 {
+	flex: 0 0 50%;
+	/* neemt 70% van de breedte van de carrousel */
+	margin: 0.5em;
+	background-color: var(--color-backgroundCard);
+	padding: 0.5em;
+	list-style: none;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.card2 a {
+	display: flex;
+	flex-direction: column;
+}
+
+.card2 a img {
+	order: -1;
+	width: 100%;
+}
+
+.card2 a h3 {
+	order: 0;
+	font-weight: 400;
+	font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+	font-size: 0.8em;
+}
+
+.card2 a p {
+	order: 1;
+	font-weight: 600;
+	font-size: 1em;
+}
+
+.items {
+	position: relative;
+	margin-left: -1.5em;
+	/* marge van main compenseren */
+	margin-right: -1.5em;
+	padding-bottom: 7rem;
+}
+
+.items>a {
+	display: block;
+	/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/display */
+	text-align: right;
+	margin-right: 1.5em;
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+.items::before {
+	content: "";
+	position: absolute;
+	top: 10rem;
+	/* zodat hij deels achter de carrousel kruipt */
+	left: 0;
+	width: 100%;
+	height: 60vh;
+	/* speel met de hoogte */
+	background: url("../images/Herfst_bij_Dille_slider.jpg") no-repeat center/cover;
+	z-index: -1;
+}
+
+/************************
+	BANNER
+*************************/
+
+.banner {
+	padding-top: 2em;
+	padding-bottom: 2em;
+	margin-top: 10em;
+	background-color: var(--color-backgroundBanner);
+	margin-left: -1.5em;
+	margin-right: -1.5em;
+}
+
+
+.banner h2 {
+	font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+	font-weight: lighter;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: medium;
+}
+
+.banner a {
+	font-family: "Typewriter Serial";
+	font-weight: lighter;
+}
+
+/************************
+	TIPS & INSPIRATIE
+*************************/
+.Tips {
+	background-color: var(--color-backgroundTips);
+	margin-left: -1.5em;
+	margin-right: -1.5em;
+	margin-bottom: 3em;
+	padding-bottom: 5em;
+}
+
+.Tips h2 {
+	font-size: 2.5rem;
+	font-weight: lighter;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	margin-left: 1em;
+}
+
+.Tips h3 {
+	font-size: 1.5em;
+}
+
+.Tips>a {
+	display: block;
+	/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/display */
+	text-align: right;
+	margin-right: 1.5em;
+	margin-bottom: 2em;
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+.Tips section {
+	background-color: var(--color-backgroundCard);
+	padding-bottom: 1.2em;
+	margin-bottom: 1em;
+	margin: 1.5em;
+}
+
+.Tips section h3,
+.Tips section p {
+	font-weight: lighter;
+	padding-left: 0.75em;
+	padding-right: 0.75em;
+	padding-top: 0.5em;
+}
+
+.Tips section p {
+	font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+	font-weight: normal;
+	font-size: 1.2em;
+}
+
+/************************
+	WORD MEMBER
+*************************/
+
+.wordMember {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color-backgroundMember);
+	margin-bottom: 1em;
+	margin-top: 6em;
+}
+
+/* afbeelding vult het hele blok */
+.wordMember img {
+	order: -1;
+	width: 100%;
+	margin: 0;
+}
+
+/* tekstgedeelte krijgt padding */
+.wordMember h2,
+.wordMember ul,
+.wordMember .button {
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 1em;
+}
+
+.wordMember h2 {
+	padding-top: 1em;
+}
+
+.wordMember .button {
+	margin-left: 1.5em;
+	margin-right: 5em;
+	margin-bottom: 1.5em;
+}
+
+
+
+.wordMember ul {
+	font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+	line-height: 1.5em;
+	margin-left: 1.5em;
+}
+
+/****************
+ KLANTENSERVICE 
+ ****************/
+
+.Klantenservice {
+	background-color: var(--color-backgroundKlantenservice);
+	padding-bottom: 1.2em;
+	margin-bottom: 1em;
+	margin: 1.5em;
+	margin-top: 5em;
+	margin-right: -1.5em;
+	margin-left: -1.5em;
+}
+
+.Klantenservice,
+.Klantenservice h2,
+.Klantenservice a,
+.Klantenservice p {
+	color: var(--color-textButton)
+}
+
+.Klantenservice h2,
+.Klantenservice>a {
+	margin-left: 1em;
+}
+
+.Klantenservice div {
+	background-color: var(--color-button);
+	margin: 1em;
+	margin-right: 6em;
+	margin-top: -3em;
+	padding: 1em;
+	line-height: 2em;
+	position: relative;
+	z-index: 0;
+}
+
+.Klantenservice div h2 {
+	margin-left: 0;
+}
+
+.Klantenservice p {
+	padding-bottom: 1.5em;
+	padding-left: 1.5em;
+	padding-right: 1em;
+}
+
+.Klantenservice a {
+	display: inline-block;
+	text-decoration: underline;
+}
+
+.Klantenservice .Mail {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+
+/* ****************
+***** FOOTER ******
+******************* */
+
+footer {
+	background-color: var(--color-backgroundFooter);
+	margin-top: -1.5em;
+}
+
+footer strong {
+	color: var(--color-textFooter);
+	font-weight: 700;
+}
+
+footer p {
+	font-weight: 400;
+	font-size: smaller;
+	padding: 2em;
+}
+
+
+
+.BTW {
+	color: var(--color-textGrijs);
+	margin-bottom: 1.5em;
+}
+
+footer section div {
+	background-color: var(--color-backgroundFooter);
+	display: flex;
+	align-items: center;
+	margin-bottom: 1em;
+}
+
+footer section img {
+	width: 50%;
+	padding: 2em;
+}
+
+
+footer summary {
+	display: flex;
+	justify-content: space-between;
+	/* titel links, icoon rechts */
+	align-items: center;
+	/* netjes op één lijn */
+	list-style: none;
+	/* driehoekje weg */
+	padding: 0.75em;
+	font-family: "Typewriter Serial", sans-serif;
+	font-size: 1.2rem;
+	border-bottom: 1px solid rgb(247, 245, 245);
+	margin-left: 0.5em;
+	margin-right: 1em;
+}
+
+footer summary svg {
+	width: 1.25em;
+	height: 1.25em;
+}
+
+footer a {
+	margin: 1.5em;
+	line-height: 2em;
+	font-weight: 350;
+}
+
+footer a svg {
+	width: 1.25em;
+	height: 1.25em;
+	vertical-align: middle;
+	margin-left: 1em;
+	margin-bottom: 1.5em;
+}
+
+
+footer select {
+	width: 90%;
+	padding: 0.8em;
+	background-color: var(--color-background);
+	border: none;
+	margin: 1.5em;
+}
+
+
+
+
+/**************
+PAGINA 2
+**************/
+
+/* BREADCRUMBS */
+
+.breadcrumbs {
+	margin-bottom: 1.5em;
+	margin-top: -1em;
+	overflow: auto;
+	white-space: nowrap;
+	/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/white-space */
+}
+
+.breadcrumbs ul {
+	display: inline-flex;
+	list-style: none;
+	gap: .5em;
+	font-size: 0.8em;
+}
+
+.breadcrumbs li {
+	display: flex;
+	/* tekst en pijltje blijven bij elkaar */
+	align-items: center;
+	gap: .25em;
+	margin-bottom: 0.5em;
+}
+
+.breadcrumbs a {
+	text-decoration: none;
+}
+
+.breadcrumbs svg {
+	width: .8em;
+	height: .8em;
+}
+
+
+
+.Pagina2 h1 {
+	font-size: 1.2em;
+	margin-bottom: 1.5em;
+}
+
+
+/****************
+   FOTOS KOFFIE
+*****************/
+.Products {
+	display: flex;
+	flex-direction: column;
+
+}
+
+/* 2 bronnen gebruikt: 
+https://codepen.io/shooft/pen/wBKyoWx 
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-snap-type */
+
+.Product {
+	display: flex;
+	/* li naast elkaar */
+	overflow: hidden;
+	/* de li's buiten beeld zijn niet zichtbaar */
+	scroll-snap-type: x mandatory;
+	/* horizontaal scrollen en 'snapt' elke foto */
+	scroll-behavior: smooth;
+	/* scrollen verloopt soepel */
+	list-style: none;
+	align-items: center;
+	background-color: var(--color-background);
+	margin: -1.5em;
+	padding: 0em;
+}
+
+.Product li {
+	flex-basis: 100%;
+	flex-shrink: 0;
+	/* li zijn zo breed als de ul */
+	scroll-snap-align: center;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+}
+
+.Product li img {
+	width: 100%;
+	height: auto;
+	display: block;
+	/* haalt baseline-gap weg */
+	max-height: 40vh;
+	/* begrenst hoogte */
+	object-fit: contain;
+	/* netjes binnen de slide */
+	background-color: var(--color-backgroundCard);
+	margin-bottom: 1.5em;
+}
+
+/* eind gebruik bronnen */
+
+.Product a svg {
+	margin: 1em;
+	color: lightgrey;
+	width: 0.5em;
+}
+
+.ProductVormgeving {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+
+/***************
+	PRIJS
+****************/
+
+.Prijs {
+	font-weight: 500;
+	font-size: 1.5em;
+	margin-top: 1.5em;
+	margin-bottom: 0.2em;
+}
+
+.Prijs span {
+	color: lightgrey;
+	font-weight: lighter;
+	margin-left: .5em;
+	font-size: 0.75em;
+}
+
+
+/***************
+	VOORWAARDEN
+****************/
+
+.Voorwaarden {
+	margin-bottom: 1.5em;
+}
+
+.Voorwaarden li {
+	display: flex;
+	align-items: center;
+
+}
+
+.Voorwaarden svg {
+	width: 1.2em;
+	color: #97ba7e;
+}
+
+.Products>a {
+	text-decoration: underline;
+	margin-bottom: 1.5em;
+}
+
+summary {
+	display: flex;
+	justify-content: space-between;
+	/* titel links, icoon rechts */
+	align-items: center;
+	/* netjes op één lijn */
+	list-style: none;
+	/* driehoekje weg */
+	padding: 0.75em;
+	font-family: "Typewriter Serial", sans-serif;
+	font-size: 1.2rem;
+	border-bottom: 1px solid lightgrey;
+}
+
+summary svg {
+	width: 1.25em;
+	height: 1.25em;
+}
+
+.Products section {
+	margin-bottom: 1.5em;
+	border-top: 1px solid lightgrey;
+	margin-right: 1em;
+}
+
+/************************
+TOEVOEGEN WINKELMANDJE
+************************ */
+
+
+.Toevoegen {
+	position: fixed;
+	bottom: 0;
+	z-index: 100;
+	margin-left: -1.5em;
+	display: flex;
+	background-color: var(--color-background);
+	padding: 0.75em;
+	width: 100%;
+	gap: 0.5em;
+}
+
+.Toevoegen select {
+	width: 20%;
+	border: 1px solid lightgrey;
+	font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+	font-size: 1.5em;
+	font-weight: lighter;
+}
+
+.Toevoegen button {
+	width: 80%;
+	background-color: var(--color-button);
+	color: var(--color-textButton);
+	font-family: "Typewriter Serial", "Sans serif";
+	font-size: 1em;
+	padding: 0.75em;
+
+}
+
+
+
+/* ***************
+	MEDIA QUERIES 
+******************/
+
+@media (min-width: 768px) {
+	.assortiment {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		gap: 0.75rem;
+	}
+
+
+	.assortiment>img {
+		grid-column: 2;
+		grid-row: 1 / span 3;
+		width: 100%;
+		height: auto;
+	}
+
+	.assortiment .cards {
+		grid-column: 1 / -1;
+		margin-top: 1rem;
+
+		/* vier naast elkaar op desktop */
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1rem;
+	}
+
+	.items ul {
+		display: flex;
+	}
+
+	.card2 {
+		flex: 0 0 auto;
+		width: 150px;
+		padding: .5em;
+		text-align: center;
+	}
+
+	.card2 img {
+		width: 100%;
+		height: auto;
+		margin-bottom: .5em;
+	}
+
+	.Tips {
+		display: flex;
+		flex-direction: column;
+		/* eerst de titel bovenaan */
+	}
+
+	.Tips .kaarten {
+		display: flex;
+		/* zet de drie kaarten naast elkaar */
+		flex-wrap: wrap;
+		/* laat ze afbreken als het scherm smaller wordt */
+		justify-content: center;
+		margin-top: 1.5em;
+	}
+
+	.Tips section {
+		background-color: var(--color-backgroundCard);
+		max-width: 300px;
+	}
+
+	.wordMember {
+		display: flex;
+		flex-direction: row;
+		/* tekst links, afbeelding rechts */
+		align-items: center;
+	}
+
+	.wordMember img {
+		width: 50%;
+	}
+
+	.wordMember div {
+		display: flex;
+		flex-direction: column;
+		/* tekst onder elkaar*/
+		width: 50%;
+	}
+
+	/* .OndersteDeel {
+		display: flex;
+		justify-content: space-between;
+		width: 90%;
+	} */
+
+
+	.Klantenservice {
+		margin-left: 0.50em;
+		flex: 1;
+		/* even breed */
+		max-width: 500px;
+		/* eventueel begrenzen */
+	}
+
+
+	footer div {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+	}
+
+	footer div img {
+		max-width: 10em;
+	}
+
+	.ProductVormgeving {
+		flex-direction: row;
+		align-items: flex-start;
+
+	}
+
+	.ProductVormgeving .Product {
+		flex: 0 0 40%;
+		/* kolom links neemt 40% van de ruimte */
+
+		margin: 0;
+		/* voorkomt rare uitspring door -1.5em elders */
+	}
+
+
+
+	.ProductInfo {
+		flex: 0 0 60%;
+		/* kolom rechts neemt 60% */
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.Toevoegen {
+		position: static;
+		background: none;
+		padding: 0;
+		margin-top: 1rem;
+	}
+
+	main {
+		padding-bottom: 0;
+	}
+
+	.Toevoegen select {
+		width: 6rem;
+	}
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+	color: white; 
+	background-color: #252d22;
+    --color-text: white;
+	--color-textFooter: darkgreen;
+	--color-textlicht: black;
+	--color-textGrijs: rgb(238, 235, 235);
+	--color-background: #494843;
+	--color-backgroundHeader:#5c5b54;
+	--color-backgroundHome: #594117;
+	--color-backgroundMelding: #4b565f;
+	--color-backgroundBanner: #504930;
+	--color-backgroundCard: rgb(44, 43, 43);
+	--color-backgroundMember: #303b23;
+	--color-backgroundTips: #3d3d36;
+	--color-backgroundKlantenservice: #252d22;
+	--color-backgroundFooter: rgb(47, 43, 43);
+  }
+}
+/************************
+	VISUAL HIDDEN CODE 
+https://www.a11yproject.com/posts/how-to-hide-content/ 
+*************************/
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+}
